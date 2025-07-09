@@ -8,3 +8,5 @@ New update to the doc
 Added new branch
 
 Simply clikcing cmd + S to test push
+
+simple comment for merge conflict resolution
