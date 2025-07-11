@@ -1,0 +1,56 @@
+ body {
+            background: #fff;
+            color: #222;
+            font-family: Arial, Helvetica, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        header, nav, main, footer {
+            margin: 0 auto;
+            max-width: 900px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1em;
+        }
+        nav a {
+            color: #0057b8;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+        }
+        nav a:focus, nav a:hover, button:focus {
+            outline: 2px solid #222;
+            background: #e6f0ff;
+        }
+        h1, h2, h3 {
+            font-family: 'Arial Black', Arial, sans-serif;
+        }
+        button {
+            background: #0057b8;
+            color: #fff;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:focus, button:hover {
+            background: #003a75;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            font-family: inherit;
+            font-size: 1em;
+            padding: 0.3em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        figure img {
+            border: 2px solid #0057b8;
+            border-radius: 8px;
+        }
