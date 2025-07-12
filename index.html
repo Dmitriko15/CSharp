@@ -4,21 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Explore the portfolio of Dmitri Konev, a web developer skilled in C#, JavaScript, Python, and modern web technologies. View projects, skills, and contact information.">
+    <meta name="keywords" content="Portfolio, Web Developer, C#, JavaScript, Python, HTML, CSS, Projects">
+    <meta name="author" content="Dmitri Konev">
 </head>
 <body>
     <header>
         <h1>Welcome to My Website</h1>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
+            <button class="hamburger" aria-label="Open navigation menu">&#9776;</button>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" tabindex="0">Home</a></li>
+                <li><a href="#" tabindex="0">About</a></li>
+                <li><a href="#" tabindex="0">Contact</a></li>
             </ul>
         </nav>
     </header>
     <!-- Content goes here -->
     <main>
-        
+        <section aria-labelledby="about-me-heading">
+            <h2 id="about-me-heading">About Me</h2>
+            <p>
+                <!-- Describe yourself here -->
+                I am a Junior Full Stack Engineer with a strong foundation in Python, Node.js, Java, and C#. I am passionate about building effective cloud-based solutions and thrive in remote, collaborative environments. My experience includes developing and delivering high-quality software using best practices, and I am eager to grow further in Agile and DevSecOps settings. I enjoy tackling new challenges, learning modern technologies, and contributing to innovative teams focused on application platforms and event-driven architectures.
+            </p>
+        </section>
+        <section aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <article>
+                <h3>Project One</h3>
+                <figure>
+                    <img src="https://via.placeholder.com/150" alt="Homepage screenshot of Project One, a web application for task management">
+                    <figcaption>Homepage screenshot of Project One</figcaption>
+                </figure>
+                <p>
+                    Description for Project One. Briefly explain what this project is about and any key features.
+                </p>
+            </article>
+            <article>
+                <h3>Project Two</h3>
+                <figure>
+                    <img src="https://via.placeholder.com/150" alt="Dashboard screenshot of Project Two, a data visualization tool">
+                    <figcaption>Dashboard screenshot of Project Two</figcaption>
+                </figure>
+                <p>
+                    Description for Project Two. Briefly explain what this project is about and any key features.
+                </p>
+            </article>
+        </section>
+        <section aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul>
+            <li>
+                Programming Languages
+                <ul>
+                <li>C#</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                </ul>
+            </li>
+            <li>
+                Web Development
+                <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>ASP.NET</li>
+                <li>React</li>
+                </ul>
+            </li>
+            <li>
+                Database Management
+                <ul>
+                <li>SQL Server</li>
+                <li>MySQL</li>
+                </ul>
+            </li>
+            <li>
+                Version Control
+                <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                </ul>
+            </li>
+            <li>
+                Cloud Platforms
+                <ul>
+                <li>Azure</li>
+                <li>AWS (basic)</li>
+                </ul>
+            </li>
+            <li>
+                Other Skills
+                <ul>
+                <li>Problem Solving & Debugging</li>
+                <li>Agile & Scrum Methodologies</li>
+                <li>Unit Testing & Test-Driven Development</li>
+                </ul>
+            </li>
+            </ul>
+        </section>
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required  aria-required="true">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required  aria-required="true">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required  aria-required="true"   ></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 My Website. All rights reserved.</p>
