@@ -233,3 +233,23 @@ img, video {
 .hamburger {
     display: none; /* Hide hamburger on desktop */
 }
+
+/* Add to styles.css */
+.project-filters {
+    margin-bottom: 1em;
+    display: flex;
+    gap: 1em;
+}
+.project-filters button {
+    background: #0057b8;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.project-filters button:hover,
+.project-filters button:focus {
+    background: #003a75;
+}
