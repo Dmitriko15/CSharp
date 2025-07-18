@@ -15,9 +15,10 @@
         <nav role="navigation" aria-label="Main navigation">
             <button class="hamburger" aria-label="Open navigation menu">&#9776;</button>
             <ul>
-                <li><a href="#" tabindex="0">Home</a></li>
-                <li><a href="#" tabindex="0">About</a></li>
-                <li><a href="#" tabindex="0">Contact</a></li>
+                <li><a href="#about-me-heading" tabindex="0">About</a></li>
+                <li><a href="#projects-heading" tabindex="0">Projects</a></li>
+                <li><a href="#skills-heading" tabindex="0">Skills</a></li>
+                <li><a href="#contact-heading" tabindex="0">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -30,22 +31,28 @@
                 I am a Junior Full Stack Engineer with a strong foundation in Python, Node.js, Java, and C#. I am passionate about building effective cloud-based solutions and thrive in remote, collaborative environments. My experience includes developing and delivering high-quality software using best practices, and I am eager to grow further in Agile and DevSecOps settings. I enjoy tackling new challenges, learning modern technologies, and contributing to innovative teams focused on application platforms and event-driven architectures.
             </p>
         </section>
+        <!-- Add this above your projects list -->
+        <section class="project-filters">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('web')">Web</button>
+            <button onclick="filterProjects('data')">Data</button>
+        </section>
         <section aria-labelledby="projects-heading">
             <h2 id="projects-heading">Projects</h2>
-            <article>
+            <article data-category="web">
                 <h3>Project One</h3>
                 <figure>
-                    <img src="https://via.placeholder.com/150" alt="Homepage screenshot of Project One, a web application for task management">
+                    <img src="images/forest_walk.jpeg" alt="Homepage screenshot of Project One, a web application for task management" class="project-image">
                     <figcaption>Homepage screenshot of Project One</figcaption>
                 </figure>
                 <p>
                     Description for Project One. Briefly explain what this project is about and any key features.
                 </p>
             </article>
-            <article>
+            <article data-category="data">
                 <h3>Project Two</h3>
                 <figure>
-                    <img src="https://via.placeholder.com/150" alt="Dashboard screenshot of Project Two, a data visualization tool">
+                    <img src="images/Hugo_Jara.jpeg" alt="Dashboard screenshot of Project Two, a data visualization tool" class="project-image">
                     <figcaption>Dashboard screenshot of Project Two</figcaption>
                 </figure>
                 <p>
