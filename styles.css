@@ -160,6 +160,11 @@ img, video {
     display: block;
 }
 
+/* Hide hamburger on desktop */
+.hamburger {
+    display: none;
+}
+
 /* Responsive Layout for Projects Section */
 @media (max-width: 700px) {
     section[aria-labelledby="projects-heading"] article {
@@ -224,14 +229,16 @@ img, video {
     .hamburger {
         display: block;
         cursor: pointer;
-        background: none;
+        background: #fff;         /* White background */
         border: none;
         font-size: 2em;
         margin-left: auto;
+        z-index: 1001;
+        color: red;
+        border-radius: 8px;       /* Rounded corners */
+        box-shadow: 0 2px 6px rgba(0,0,0,0.10); /* Subtle shadow */
+        padding: 0.25em 0.5em;    /* Some padding */
     }
-}
-.hamburger {
-    display: none; /* Hide hamburger on desktop */
 }
 
 /* Add to styles.css */
